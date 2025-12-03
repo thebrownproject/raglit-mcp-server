@@ -17,10 +17,10 @@ RagLit is a Model Context Protocol (MCP) server that bridges AI agents like Clau
 
 ## Tech Stack
 
-**Runtime:** Node.js · TypeScript
-**AI/ML:** OpenAI API (text-embedding-3-small) · pgvector
-**Database:** PostgreSQL · PostgREST
-**Architecture:** Model Context Protocol (MCP) · Repository Pattern
+**Runtime:** Node.js · TypeScript <br>
+**AI/ML:** OpenAI API (text-embedding-3-small) · pgvector <br>
+**Database:** PostgreSQL · PostgREST <br>
+**Architecture:** Model Context Protocol (MCP) · Repository Pattern <br>
 **Tools:** Zod (validation) · ESLint
 
 ---
