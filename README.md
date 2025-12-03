@@ -7,8 +7,6 @@
 
 > Model Context Protocol server enabling AI agents to query and interact with PostgREST APIs
 
-🔗 **GitHub:** [raglit-fixed-mcp](https://github.com/thebrownproject/raglit-fixed-mcp)
-
 ---
 
 ## Overview
@@ -50,6 +48,7 @@ Built using the Model Context Protocol (MCP) specification, an emerging standard
 ## Learnings & Challenges
 
 **Key Learnings:**
+
 - Implementing Model Context Protocol (MCP) specification for AI agent tool integration
 - Designing repository pattern abstractions for REST API interactions with type-safe interfaces
 - Understanding pgvector cosine similarity search with PostgreSQL RPC function integration
@@ -57,6 +56,7 @@ Built using the Model Context Protocol (MCP) specification, an emerging standard
 - Using Zod for runtime schema validation and environment configuration
 
 **Challenges Overcome:**
+
 - Debugging PostgREST schema cache issues requiring exact column name matching (camelCase)
 - Designing MCP tool schemas that balance flexibility with type safety using Zod
 - Implementing proper error handling for cascading failures (OpenAI → PostgreSQL → PostgREST)
@@ -76,6 +76,7 @@ npm run start
 
 **Claude Desktop Integration:**
 Add to `claude_desktop_config.json`:
+
 ```json
 {
   "mcpServers": {
@@ -93,6 +94,7 @@ Add to `claude_desktop_config.json`:
 ```
 
 **PostgreSQL Setup:**
+
 ```sql
 -- Enable pgvector extension
 CREATE EXTENSION IF NOT EXISTS vector;
@@ -115,6 +117,7 @@ CREATE TABLE public.chunks (
 ```
 
 **Environment Variables:**
+
 ```env
 EXTERNAL_API_URL=https://your-postgrest-url
 OPENAI_API_KEY=sk-your-openai-key
